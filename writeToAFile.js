@@ -13,8 +13,8 @@ const writeGreetingToFile = (name) => {
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
-});
+}); 
 rl.question('What is your greeting name ?: ', (name) => {
-    writeGreetingToFile(name);
     rl.close();
+    writeGreetingToFile(name);
 });
